@@ -110,3 +110,43 @@
     letter-spacing: 0.14em;
   }
 }
+.code-status-summary {
+  margin-top: 24px;
+}
+
+.status-message {
+  margin-bottom: 18px;
+  line-height: 1.7;
+}
+
+.status-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.status-meta > div {
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 140, 0, 0.25);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.status-meta small {
+  display: block;
+  margin-bottom: 6px;
+  opacity: 0.65;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.status-meta strong {
+  display: block;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .status-meta {
+    grid-template-columns: 1fr;
+  }
+}
